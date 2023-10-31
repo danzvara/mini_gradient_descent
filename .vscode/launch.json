@@ -8,7 +8,12 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "justMyCode": true,
-      "args": ["train-images-idx3-ubyte", "train-labels-idx1-ubyte"]
+      "args": [
+        "./data/train-images-idx3-ubyte",
+        "./data/train-labels-idx1-ubyte",
+        "./data/t10k-images-idx3-ubyte",
+        "./data/t10k-labels-idx1-ubyte"
+      ]
     }
   ]
 }
