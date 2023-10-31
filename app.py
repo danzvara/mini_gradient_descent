@@ -1,7 +1,7 @@
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
-import nn as nn
+import linear_layer
 
 
 def parse_args():
@@ -70,9 +70,9 @@ if __name__ == "__main__":
     input_size = 28 * 28
 
     layers = [
-        nn.LinearLayer(128, input_size),
-        nn.LinearLayer(30, 128),
-        nn.LinearLayer(10, 30, "sigmoid"),
+        linear_layer.LinearLayer(128, input_size),
+        linear_layer.LinearLayer(30, 128),
+        linear_layer.LinearLayer(10, 30, "sigmoid"),
     ]
 
     losses = []
